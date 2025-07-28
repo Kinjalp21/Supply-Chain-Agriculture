@@ -8,7 +8,7 @@ Traditional agricultural supply chains in India suffer from inefficiencies due t
 
 - Predict demand based on historical trends and weather.
 - Optimize crop flow through clustering and routing.
-- Provide actionable insights via a web-based dashboard.
+- Provide predicted revenue driving decision making.
 
 <img width="1514" height="865" alt="Screenshot 2025-04-06 221722" src="https://github.com/user-attachments/assets/fd5592ae-2670-49da-a5a8-a9365d2368c4" />
 
@@ -18,7 +18,6 @@ Traditional agricultural supply chains in India suffer from inefficiencies due t
 - 🔍 Demand prediction using ML (Linear Regression).
 - 📦 Supply clustering using KMeans.
 - 🚛 Route optimization suggestions.
-- 📊 Interactive dashboard for stakeholders.
 - 📁 Easy data input via web interface.
 
 ## 🛠️ Tech Stack
@@ -26,8 +25,7 @@ Traditional agricultural supply chains in India suffer from inefficiencies due t
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Python (Flask)
 - **ML Libraries**: Scikit-learn, Pandas, NumPy
-- **Database**: SQLite
-- **Visualization**: Chart.js, Plotly
+- **Database**: Kaggle 
 
 ## 📈 How It Works
 
@@ -37,13 +35,6 @@ Traditional agricultural supply chains in India suffer from inefficiencies due t
    - Clustering production zones using KMeans.
    - Forecasting demand using regression models.
 4. **Optimization**:
-   - Suggests shortest or cost-efficient routes.
+   - Predicts overall revenue.
    - Predicts potential bottlenecks.
 
-## 🖥️ Installation
-
-```bash
-git clone https://github.com/your-username/agri-supply-chain-ai.git
-cd agri-supply-chain-ai
-pip install -r requirements.txt
-python app.py

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply Chain Revenue Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Supply Chain Revenue Prediction</h1>
+        <form id="predictionForm">
+            <div class="row">
+
+            <!-- PRODUCT INFO -->
+            <div class="form-section">
+                <h2>Product Info</h2>
+                <div class="form-grid">
+                    <input type="text" name="Product type" placeholder="Product type" value="Electronics" required />
+                    <input type="text" name="SKU" placeholder="SKU" value="SKU1234" required />
+                    <input type="number" name="Price" placeholder="Price" value="199.99" required />
+                    <input type="number" name="Availability" placeholder="Availability" value="500" required />
+                    <input type="number" name="Number of products sold" placeholder="Products Sold" value="200"
+                        required />
+                    <input type="number" name="Stock levels" placeholder="Stock Levels" value="1000" required />
+                </div>
+            </div>
+
+            <!-- SHIPPING INFO -->
+            <div class="form-section">
+                <h2>Shipping Info</h2>
+                <div class="form-grid">
+                    <input type="text" name="Shipping carriers" placeholder="Shipping Carrier" value="FedEx" required />
+                    <input type="number" name="Shipping costs" placeholder="Shipping Costs" value="50" required />
+                    <input type="number" name="Shipping times" placeholder="Shipping Time (days)" value="3" required />
+                    <input type="text" name="Transportation modes" placeholder="Transportation Mode" value="Truck"
+                        required />
+                    <input type="text" name="Routes" placeholder="Routes" value="Mumbai-Pune" required />
+                    <input type="text" name="Location" placeholder="Location" value="Pune" required />
+                </div>
+            </div>
+
+            <!-- MANUFACTURING -->
+            <div class="form-section">
+                <h2>Manufacturing</h2>
+                <div class="form-grid">
+                    <input type="number" name="Manufacturing costs" placeholder="Manufacturing Cost" value="1200"
+                        required />
+                    <input type="number" name="Manufacturing lead time" placeholder="Lead Time" value="7" required />
+                    <input type="number" name="Lead time" placeholder="Lead time (order)" value="5" required />
+                    <input type="number" name="Lead times" placeholder="Total Lead Time" value="10" required />
+                    <input type="number" name="Production volumes" placeholder="Production Volume" value="1000"
+                        required />
+                    <input type="text" name="Supplier name" placeholder="Supplier Name" value="ABC Corp" required />
+                </div>
+            </div>
+
+            <!-- CUSTOMER & INSPECTION -->
+            <div class="form-section">
+                <h2>Customer & Inspection</h2>
+                <div class="form-grid">
+                    <input type="text" name="Inspection results" placeholder="Inspection Result" value="Passed"
+                        required />
+                    <input type="text" name="Customer demographics" placeholder="Demographics" value="Urban Youth"
+                        required />
+                    <input type="number" name="Defect rates" placeholder="Defect Rate (%)" value="2.5" required />
+                    <input type="number" name="Order quantities" placeholder="Order Quantity" value="300" required />
+                    <input type="number" name="Costs" placeholder="Total Cost" value="50000" required />
+                </div>
+            </div>
+
+        </div>
+
+            <button type="submit">Predict Revenue</button>
+        </form>
+
+        <div id="result">
+            <h3>Predicted Revenue: ₹<span id="predictedRevenue">--</span></h3>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
